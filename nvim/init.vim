@@ -5,7 +5,10 @@
 "==================================================================
 
 set timeoutlen=1000 ttimeoutlen=0 " timeoutlen é usado para atrasos de mapeamento e ttimeoutlen é usado para atrasos de código-chave.
-
+set t_Co=256
+set clipboard=unnamedplus
+set mouse=a
+set mouse=nicr
 set guifont=Fira\ Code:h14
 set showcmd " Configurando a exibição de comando.
 set path+=** " Incluindo subpastas nos caminhos dos arquivos.
@@ -346,7 +349,7 @@ nnoremap <leader>eh :split $MYVIMRC<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " Definindo atalho para o modo de comando e bash.
-nnoremap 1 :!
+nnoremap <BS>s :!
 
     "Cnfigurando atalho para recarregar as modificações feitas no arquivo na memória.
 nnoremap <leader>r :w<CR> :source ~/.config/nvim/init.vim<CR> :echo "init.vim foi Salvo e Carregado em Memória!"<CR>
@@ -483,7 +486,7 @@ cab senha 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
 cab cmm !git commit -m "
 cab add !git add .
 cab sts !git status
-cab psh !git push https://ghp_qz7oooqpkhifeuktyw9trzvukyj7is0asnf0@github.com/ciberaprendiz/zettelkasten.git
+cab psh git push -q https://${ghp_qz7oooqpkhifeuktyw9trzvukyj7is0asnf0@github.com}/ciberaprendiz/zettelkasten.git main
 
 "==================================================================
 "==================================================================
