@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# _____________________________________________________________
+# Programa   : devir 
+# Linguagem  : Shel Script
+# Descrição  : Pequeno programa para anotações diárias
+# Versão     : 0.1
+# Autor      : André dos Santos Silva 
+# Mantenedor : André dos Santos Silva
+# Contato    : santosandsilva@gmail.com
+# Data       : 24/09/2021
+# Licença    : GNU/GPL v3.0
+# TODO       : Nenhum no momento
+# FIXME      : Desconhecido
+# ! WARNING !: 
+# _____________________________________________________________
+# Instalação: Execute o comando abaixo, no diretório em que o arquivo desse script se encontra:
+#
+#   sudo chmod +x devir && mv devir $HOME/.local/bin/
+#
+# Uso: $ devir aluguma coisa para registro    (anexa o texto ao arquivo)
+#      $ xclip -o | devir                     (anexa texto do clipboard ao arquivo)
+#      $ devir                                (abre um novo arquivo no vim)
+# _____________________________________________________________
+
+set -e
+
+readonly NOTES_DIRECTORY="${NOTES_DIRECTORY:-"${HOME}/devir"}"
+readonly NOTES_EDITOR="${EDITOR}"
+
+readonly NOTES_FILE="$(date +%Y-%m-%d).md"
+readonly NOTES_PATH="${NOTES_DIRECTORY}/${NOTES_FILE}"
+
+if [ ! -d "${NOTES_DIRECTORY}" ]; then
+    while true; do
+        read -rp "${NOTES_DIRECTORY} O diretório de notas não existe, deseja que crie? Digite S para sim, N para não: " sn
+        case "${sn}" in
+            [Ss]* ) mkdir -p "${NOTES_DIRECTORY}"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Por favor, responda S ou N";;
+        esac
+    done
+fi
+
+if [ ${#} -eq 0 ]; then
+    if [ -p "/dev/stdin" ]; then
+        (cat; printf "\n\n") >> "${NOTES_PATH}"
+    else
+        eval "${NOTES_EDITOR}" "${NOTES_PATH}"
+    fi
+else
+    printf "%s\n\n" "${*}" >> "${NOTES_PATH}"
+fi
