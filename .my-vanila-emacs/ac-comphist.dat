@@ -1,0 +1,70 @@
+((("evil-global-marker-p" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("function-key-map" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("event-apply-control-modifier" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("senders" .
+   [1 0 0 0 0 0 0])
+  ("evil-delete-buffer" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0])
+  ("enable-recursive-minibuffers" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("use-package" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("evil-global-set-key" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 2])
+  (":bind" .
+   [1 0 0 0 1])
+  ("evil-normal-state-map" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 2])
+  ("evil-normal-state-modes" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("evil" .
+   [1 0 0 0])
+  ("evil-define-key" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("normal" .
+   [0 0 1 1 0 3])
+  ("avy-goto-char" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("evil-insert-state-map" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("evil-window-split" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("evil-window-left" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0])
+  ("evil-window-down" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("evil-window-right" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("evil-window-up" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("evil-window-mru" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("evil-save" .
+   [0 0 0 0 0 0 0 1 0])
+  (":custom" .
+   [0 0 0 1 0 0 0])
+  (":map" .
+   [2 0 0 0])
+  ("vertico-map" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("vertico-next" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("vertico-previous" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("minibuffer-local-map" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c" .
+   [2])
+  ("backward-kill-word" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("define-key" .
+   [0 0 0 0 0 0 0 0 0 3])
+  ("event-modifiers" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("nil" .
+   [1 0 0])
+  ("kbd" .
+   [1 0 0])))

@@ -100,7 +100,7 @@ Plug 'SirVer/ultisnips'
 "Plug 'reedes/vim-pencil'
 
 " Plugin de tradução.
-Plug 'voldikss/vim-translator' 
+Plug 'voldikss/vim-translator'
 
 "Plugin de movimentação por pulos.
 "Plug 'easymotion/vim-easymotion'
@@ -156,35 +156,35 @@ let g:floaterm_keymap_toggle = '<M-space>'
 " }}}
 " Configuração de Dashboard {{{
 
-" Default value is clap 
+" Default value is clap
 let g:dashboard_default_executive ='fzf'
 
-let g:dashboard_custom_header =[ 
-    \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗', 
-    \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║', 
-    \ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║', 
-    \ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║', 
-    \ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║', 
-    \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝', 
+let g:dashboard_custom_header =[
+    \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+    \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+    \ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+    \ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+    \ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+    \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
     \]
 
 " eg : SPC mean the leaderkey
-let g:dashboard_custom_section={ 
-            \ 'buffer_list': { 
+let g:dashboard_custom_section={
+            \ 'buffer_list': {
                 \ 'description': ['Caixa de entrada               SPC n i', 'Busca em anotações e artigos   SPC f f'],
                 \ 'command':"\" \"ni"},
             \ }
 
-nmap <leader>çç :<C-u>SessionSave<CR> 
+nmap <leader>çç :<C-u>SessionSave<CR>
 nmap <leader>çl :<C-u>SessionLoad<CR><CR>
 
-nnoremap <silent> <leader>fh :History<CR> 
-nnoremap <silent> <leader>tc :DashboardChangeColorscheme<CR> 
-nnoremap <silent> <leader>fa :DashboardFindWord<CR> 
-nnoremap <silent> <leader>fm :DashboardJumpMark<CR> 
+nnoremap <silent> <leader>fh :History<CR>
+nnoremap <silent> <leader>tc :DashboardChangeColorscheme<CR>
+nnoremap <silent> <leader>fa :DashboardFindWord<CR>
+nnoremap <silent> <leader>fm :DashboardJumpMark<CR>
 nnoremap <silent> <leader>cn :DashboardNewFile<CR>
 
-" }}} 
+" }}}
 " Configuração de UndoTree {{{
 
 nnoremap <F5> :UndotreeToggle<CR>
@@ -414,7 +414,7 @@ nnoremap <c-c> viwU<Esc>
 "vE~                             : Flip Case Word
 "ggguG                           : lowercase entire file
 
-" Executa um script em shell. 
+" Executa um script em shell.
 nnoremap <leader>x :FloatermSend bash %<CR>:FloatermToggle<CR>
 
 " Configruando atalho paraslvar e sair do arquivo rápido.
@@ -576,7 +576,7 @@ let g:fzf_tags_command = 'ctags -R'
 let g:fzf_action = {
   \ 'alt-t': 'tab split',
   \ 'alt-h': 'split',
-  \ 'alt-v': 'vsplit', 
+  \ 'alt-v': 'vsplit',
   \'ctrl-y': {lines -> setreg('*', join(lines, "\n"))}}
 
 " Criando atalhos para utilizar o FZF
@@ -585,7 +585,7 @@ nnoremap <leader>ff :cd ~/zettelkasten<CR>:Rg<CR>
 
 " Mnemónico para  'Find Regex'.
 nnoremap <leader>fr :RG<CR>
-   
+
 " Lista dos 100 ultimos arquivos abertos pelo vim.
 nnoremap <leader>bo :ol<CR>
 
@@ -712,8 +712,8 @@ augroup DICIO
 augroup END
 
 " Return to last edit position when opening files (You want this!)
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
 " }}}
